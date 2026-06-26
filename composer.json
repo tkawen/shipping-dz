@@ -1,0 +1,41 @@
+{
+    "name": "tkawen/shipping-dz",
+    "description": "Sovereign Algerian COD shipping SDK — Yalidine, Yalitec, ZR Express (Procolis) & Ecotrack carriers under one verified, framework-agnostic API. 69-wilaya aware, webhooks included.",
+    "type": "library",
+    "keywords": ["algeria", "shipping", "cod", "yalidine", "zrexpress", "ecotrack", "maystro", "livraison", "dz", "ecommerce"],
+    "license": "MIT",
+    "homepage": "https://github.com/tkawen/shipping-dz",
+    "authors": [
+        {
+            "name": "TKAWEN",
+            "homepage": "https://tkawen.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tkawen\\ShippingDz\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tkawen\\ShippingDz\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# Keep the dist archive (Packagist) lean — exclude dev-only files
+/tests           export-ignore
+/.gitignore      export-ignore
+/.gitattributes  export-ignore
+/phpunit.xml     export-ignore
+/CHANGELOG.md    export-ignore
