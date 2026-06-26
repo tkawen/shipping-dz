@@ -88,7 +88,7 @@ final class YalidineWebhook
             str_contains($s, 'livré') || str_contains($s, 'delivered') => 'delivered',
             str_contains($s, 'retour') || str_contains($s, 'returned') => 'returned',
             str_contains($s, 'annul') || str_contains($s, 'cancel') => 'cancelled',
-            str_contains($s, 'expéd') || str_contains($s, 'transit') || str_contains($s, 'sortie') => 'shipped',
+            str_contains($s, 'expéd') || str_contains($s, 'transit') || str_contains($s, 'sorti') => 'shipped',
             default => null,
         };
     }

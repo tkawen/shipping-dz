@@ -10,12 +10,15 @@ namespace Tkawen\ShippingDz\Support;
  */
 final class Phone
 {
-    /** National 10-digit form `0XXXXXXXXX` (strips +213 / spaces / dashes). '' if unusable. */
+    /** National 10-digit form `0XXXXXXXXX` (strips 00 / +213 / spaces / dashes). '' if unusable. */
     public static function national(?string $phone): string
     {
         $digits = preg_replace('/\D+/', '', (string) $phone) ?? '';
+        if (str_starts_with($digits, '00')) {
+            $digits = substr($digits, 2);   // 00 international access code → drop
+        }
         if (str_starts_with($digits, '213')) {
-            $digits = substr($digits, 3);
+            $digits = substr($digits, 3);   // Algeria country code → drop
         }
         $core = ltrim($digits, '0');
 
