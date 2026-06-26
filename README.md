@@ -1,5 +1,6 @@
 # 🇩🇿 shipping-dz — Sovereign Algerian COD Shipping SDK
 
+[![Tests](https://github.com/tkawen/shipping-dz/actions/workflows/tests.yml/badge.svg)](https://github.com/tkawen/shipping-dz/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777bb4.svg)](composer.json)
 
